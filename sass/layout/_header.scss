@@ -6,25 +6,28 @@
     background-position: center;
     clip-path: polygon(100% 0, 100% 100%, 70% 100%, 0 95%, 0 0);
     position: relative;
-}
 
-.header__logo-box {
-    position: absolute;
-    top: 0.5rem;
-    left: 2rem;
-    color: $color-white;
-    font-size: 2.5rem;
-    letter-spacing: 0.5rem;
-}
+    &__logo-box {
+        position: absolute;
+        top: 0.5rem;
+        left: 2rem;
+        color: $color-white;
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+    }
 
-
-
-.header__text-box--first {
-    position: absolute;
-    top: 45%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    backface-visibility: hidden;
+    &__text-box--first {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        backface-visibility: hidden;
+        
+    }
     
 }
+
+
+
+
