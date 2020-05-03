@@ -1,0 +1,53 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 3rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: $color-grey-dark;
+}
+
+
+
+
+//heading fonts template
+
+.heading-primary--main {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    animation: slideRight1 2s ease-out;
+    
+}
+
+.heading-primary--sub {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    animation: fadeIn 4s ease-out;
+}
+
+
+.header__text-box--second {
+    background-color: $color-primary-dark;
+    height: 15rem;
+    width: 30rem;
+    position: absolute;
+    left: 75%;
+    top: 65%;
+    border-radius: 1rem;
+}
+
+.header__text-box--form {
+    padding: 1rem;
+}
+
+
+//header form field for getting a hospital card
+input[type = text] {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 0.3rem;
+}
