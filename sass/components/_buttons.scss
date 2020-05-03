@@ -1,50 +1,56 @@
 
-.btn:link,
-.btn:visited {
+.btn {
+    &:link,
+    &:visited {
     text-decoration: none;
     padding: 2rem 7rem;
 /*    transition: all 0.2s;*/
-    
-}
+    }
 
-
-.btn:active {
-    transform: translateY(-1.2rem);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.2)
-}
-
-
-.btn--white {
-    background-color: #fff;
-    color: $color-grey-dark;
-    font-size: 2rem;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
+    &:active {
+        transform: translateY(-1.2rem);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.2)
+    }
     
     
-}
-
-.btn:hover {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+    &--purple {
+        background-color: $color-secondary-2;
+        color: $color-white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        
+        
+    }
     
+    &:hover {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+        
+    }
+    
+    
+    &--animated {
+       width: 30%;
+    }
+    
+    
+    
+    &-opaque {
+        height: 4rem;
+        width: 100%;
+        color: $color-white;
+        font-weight: 300;
+        font-size: 2rem;
+        border: 2px solid $color-white;
+        text-transform: uppercase;
+        background-color: transparent;
+        border-radius: 0.3rem;
+    }
+
 }
 
 
-.btn--animated {
-   width: 30%;
-}
 
 
 
-.btn-opaque {
-    height: 4rem;
-    width: 100%;
-    color: $color-white;
-    font-weight: 300;
-    font-size: 2rem;
-    border: 2px solid $color-white;
-    text-transform: uppercase;
-    background-color: inherit;
-    border-radius: 0.3rem;
-}

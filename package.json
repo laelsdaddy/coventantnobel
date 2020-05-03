@@ -4,7 +4,7 @@
   "description": "Hospital Site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "sass": "node-sass -w sass/main.scss -o css/style.css"
   },
   "author": "Chieloka Ifionu",
   "license": "ISC",
