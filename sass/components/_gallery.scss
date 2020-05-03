@@ -1,0 +1,60 @@
+.section-gallery {
+    margin: 0 auto;
+    background-color:$color-grey-light;
+    padding-top: 2rem;
+    transition: all 5s;
+
+    &-container-1 {
+        margin: 0 auto;    
+    }
+
+    &-container-2 {
+        margin-top: -3rem;
+    }
+
+}
+
+
+
+.gallery__photos {
+
+    &--content {
+        list-style: none;
+        float: left;
+        overflow: hidden;
+       
+    }
+
+    &--content-p1 {
+        height: 18rem;
+        width: 22.5rem;
+        transform: scale(1.15);
+        opacity: 0.8;
+
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0 25rem 2rem rgba(0,0,0, 0.9);
+            transition: .6s ease;
+            opacity: 1;
+        }
+    }
+
+    &--content-p2 {
+        height: 13rem;
+        width: 18rem;
+        transform: scale(1.15);
+        opacity: 0.8;
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0 25rem 2rem rgba(0,0,0, 0.9);
+            transition: .6s ease;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+

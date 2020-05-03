@@ -91,7 +91,7 @@ input[type=text] {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn--animated {
-  width: 30%; }
+  transform: scale(1.2); }
 
 .btn-opaque {
   height: 4rem;
@@ -103,6 +103,19 @@ input[type=text] {
   text-transform: uppercase;
   background-color: transparent;
   border-radius: 0.3rem; }
+
+.section-gallery {
+  background-color: #eee;
+  margin-top: -20rem;
+  padding-top: 30rem; }
+  .section-gallery-container {
+    width: 100%;
+    position: relative; }
+
+.gallery__photos--content {
+  list-style: none;
+  height: 10rem;
+  width: 25rem; }
 
 .row {
   max-width: 114rem;

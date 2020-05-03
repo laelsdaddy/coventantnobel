@@ -65,3 +65,35 @@ input[type = text] {
     padding-left: 1rem;
     border-radius: 0.3rem;
 }
+
+
+
+
+//header secondary formatting
+.heading-secondary {
+    font-size: 3.5rem;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgba($color-secondary-1, 0.9), rgba($color-secondary-2, 0.9));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    &::after {
+        content: " ";
+        display: block;
+        width: 5rem;
+        height: 0.2rem;
+        margin: 2rem auto;
+        background-image: linear-gradient(to bottom right, rgba($color-secondary-1, 0.9), rgba($color-secondary-2, 0.9));
+        color: transparent;
+        background-clip: text;
+        transition: 1s ease;
+    }
+
+    &:hover::after {
+        width: 25rem;
+    }
+}
+
+
+

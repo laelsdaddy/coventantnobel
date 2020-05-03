@@ -15,6 +15,7 @@
     
     &--purple {
         background-color: $color-secondary-2;
+        //background: linear-gradient(to right, $color-secondary-2 50%, $color-secondary-1);
         color: $color-white;
         font-size: 2rem;
         text-transform: uppercase;
@@ -31,7 +32,7 @@
     
     
     &--animated {
-       width: 30%;
+       transform: scale(1.2);
     }
     
     
