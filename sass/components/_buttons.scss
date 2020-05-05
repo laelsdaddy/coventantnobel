@@ -3,8 +3,8 @@
     &:link,
     &:visited {
     text-decoration: none;
-    padding: 2rem 7rem;
-/*    transition: all 0.2s;*/
+    padding: 2rem 5rem;
+    transition: all 0.2s;
     }
 
     &:active {
@@ -14,14 +14,20 @@
     
     
     &--purple {
-        background-color: $color-secondary-2;
-        //background: linear-gradient(to right, $color-secondary-2 50%, $color-secondary-1);
+        // background-color: $color-secondary-2;
+        background: linear-gradient(to bottom right, $color-secondary-2 1%, $color-secondary-1);
         color: $color-white;
         font-size: 2rem;
         text-transform: uppercase;
-        border-radius: 0.5rem;
-        
-        
+        border-radius: 0.5rem;  
+    }
+
+    &--gradient{
+        background: linear-gradient(to bottom right, $color-secondary-2 1%, $color-secondary-1);
+        color: $color-white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem; 
     }
     
     &:hover {
@@ -37,7 +43,7 @@
     
     
     
-    &-opaque {
+    &--opaque {
         height: 4rem;
         width: 100%;
         color: $color-white;

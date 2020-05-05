@@ -1,16 +1,13 @@
 .section-gallery {
-    margin: 0 auto;
+    margin-top: -3.5rem;
     background-color:$color-grey-light;
-    padding-top: 2rem;
+    padding: 7rem 0 0.2rem 0;
     transition: all 5s;
 
-    &-container-1 {
-        margin: 0 auto;    
-    }
 
-    &-container-2 {
-        margin-top: -3rem;
-    }
+    &-container {
+          width: 100%;
+    }  
 
 }
 
@@ -18,40 +15,33 @@
 
 .gallery__photos {
 
+    width: 100%;
+
     &--content {
         list-style: none;
         float: left;
         overflow: hidden;
-       
-    }
 
-    &--content-p1 {
-        height: 18rem;
-        width: 22.5rem;
-        transform: scale(1.15);
-        opacity: 0.8;
-
-        &:hover {
-            transform: scale(1.04);
-            box-shadow: 0 25rem 2rem rgba(0,0,0, 0.9);
-            transition: .6s ease;
-            opacity: 1;
+        &-p1 {
+            height: 24rem;
+            width: 28.5rem;
+            transform: scale(1.15);
+            opacity: 0.8;
         }
-    }
 
-    &--content-p2 {
-        height: 13rem;
-        width: 18rem;
-        transform: scale(1.15);
-        opacity: 0.8;
-        &:hover {
+        &-p1:hover {
             transform: scale(1.04);
-            box-shadow: 0 25rem 2rem rgba(0,0,0, 0.9);
+        /*    box-shadow: 0 25rem 2rem rgba(0,0,0, 0.9);*/
             transition: .6s ease;
             opacity: 1;
         }
     }
 }
+
+
+
+
+
 
 
 

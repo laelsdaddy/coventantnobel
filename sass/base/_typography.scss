@@ -77,9 +77,10 @@ input[type = text] {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    margin-bottom: 7rem;
 
     &::after {
-        content: " ";
+        content: "";
         display: block;
         width: 5rem;
         height: 0.2rem;
@@ -97,3 +98,10 @@ input[type = text] {
 
 
 
+.heading-tertiary {
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom right, rgba($color-secondary-1, 0.9), rgba($color-secondary-2, 0.9));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
