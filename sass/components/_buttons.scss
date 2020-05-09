@@ -12,6 +12,12 @@
         box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.2)
     }
     
+
+    &-wide {
+        width: 100%;
+        margin-bottom: 3rem;
+        
+    }
     
     &--purple {
         // background-color: $color-secondary-2;
@@ -27,11 +33,12 @@
         color: $color-white;
         font-size: 1.2rem;
         text-transform: uppercase;
-        border-radius: 0.5rem; 
+        border-radius: 0.5rem;
+        
     }
     
     &:hover {
-        transform: translateY(-0.1rem);
+        transform: translateY(-0.5rem) scale(1.1);
         box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
         
     }
@@ -53,6 +60,7 @@
         text-transform: uppercase;
         background-color: transparent;
         border-radius: 0.3rem;
+
     }
 
 }

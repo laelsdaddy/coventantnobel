@@ -107,6 +107,10 @@ input[type=text] {
   transform: translateY(-1.2rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn-wide {
+  width: 100%;
+  margin-bottom: 3rem; }
+
 .btn--purple {
   background: linear-gradient(to bottom right, #8860d0 1%, #5ab9ea);
   color: #fff;
@@ -122,7 +126,7 @@ input[type=text] {
   border-radius: 0.5rem; }
 
 .btn:hover {
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.5rem) scale(1.1);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn--animated {
@@ -146,6 +150,7 @@ input[type=text] {
 
 .about-box {
   width: 100%;
+  height: 45vh;
   text-align: center;
   outline-offset: 1rem;
   transition: all .4s;
@@ -159,7 +164,7 @@ input[type=text] {
     background-clip: text; }
   .about-box p {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 4rem; }
   .about-box:hover {
     transform: scale(1.1) translateY(-1rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -191,14 +196,42 @@ input[type=text] {
       opacity: 1; }
 
 .section-details {
+  height: 90vh;
+  margin-top: 5rem;
+  padding: 6rem 0 6rem 0;
   background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.8)), url(../img/bg1.jpg);
   background-size: cover;
-  background-position: center;
-  clip-path: polygon(100% 0, 100% 100%, 70% 100%, 0 95%, 0 0);
-  position: relative; }
-
-.test {
-  height: 50rem; }
+  background-position: center; }
+  .section-details__first {
+    color: #fff;
+    position: relative; }
+    .section-details__first > h2 {
+      font-size: 4rem;
+      font-weight: 200;
+      background-color: #05386b;
+      position: absolute;
+      top: 60%;
+      left: 20%;
+      padding: 2rem;
+      transform: translateX(10%);
+      text-align: center; }
+    .section-details__first--photo {
+      width: 70rem;
+      height: 50rem; }
+  .section-details__second {
+    background-color: #fff;
+    color: #eee;
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    text-align: center; }
+    .section-details__second > h3 {
+      padding: 2rem 0;
+      border-bottom: 1px solid #5ab9ea; }
+    .section-details__second > p {
+      font-size: 1.7rem;
+      color: #5ab9ea;
+      padding-bottom: 2rem; }
 
 .row {
   max-width: 114rem;
@@ -228,7 +261,7 @@ input[type=text] {
 
 .header {
   height: 80vh;
-  background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.8)), url(../img/ops.jpg);
+  background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.8)), url(./img/ops.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 70% 100%, 0 95%, 0 0);

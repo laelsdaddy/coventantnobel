@@ -1,12 +1,53 @@
 .section-details {
-    margin-top: 20rem;
+    height: 90vh;
+    margin-top: 5rem;
+    padding: 6rem 0 6rem 0;
     background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.8)), url(../img/bg1.jpg);
     background-size: cover;
     background-position: center;
-    clip-path: polygon(100% 0, 100% 100%, 70% 100%, 0 95%, 0 0);
-    position: relative;
+
+
+    &__first {
+        color: #fff;
+        position: relative;
+
+        & > h2 {
+            font-size: 4rem;
+            font-weight: 200;
+            background-color:$color-primary-high;
+            position: absolute;
+            top: 60%;
+            left: 20%;
+            padding: 2rem;
+            transform: translateX(10%);
+            text-align: center;
+        }
+
+        &--photo {
+            width: 70rem;
+            height: 50rem;
+        }
+    }
+
+    &__second {
+        background-color:$color-white;
+        color: $color-grey-light;
+        padding: 2rem 2rem 4rem 2rem;
+        border-radius: 3px;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+        text-align: center;
+
+        & > h3 {
+            padding: 2rem 0;
+            border-bottom: 1px solid $color-secondary-1;
+        }
+
+        & > p {
+            font-size: 1.7rem;
+            color: $color-secondary-1;
+            padding-bottom: 2rem;
+        }
+    }
 }
 
-.test {
-    height: 50rem;
-}
+
