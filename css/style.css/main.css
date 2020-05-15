@@ -182,8 +182,7 @@ input[type=text] {
   width: 100%; }
   .gallery__photos--content {
     list-style: none;
-    float: left;
-    overflow: hidden; }
+    float: left; }
     .gallery__photos--content-p1 {
       height: 24rem;
       width: 28.5rem;
@@ -199,7 +198,7 @@ input[type=text] {
   height: 95vh;
   margin-top: 5rem;
   padding: 6rem 0 6rem 0;
-  background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.3));
+  background: linear-gradient(to top right, rgba(44, 66, 131, 0.1), rgba(107, 146, 227, 0.1));
   background-size: cover;
   background-position: center;
   transition: all 0.5s;

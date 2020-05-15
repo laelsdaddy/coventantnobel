@@ -16,15 +16,20 @@
 .gallery__photos {
 
     width: 100%;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    // grid-column-gap: 0;
+    // grid-row-gap: 0;
 
     &--content {
         list-style: none;
         float: left;
-        overflow: hidden;
+        
 
         &-p1 {
             height: 24rem;
             width: 28.5rem;
+            //width: 100%;
             transform: scale(1.15);
             opacity: 0.8;
         }
