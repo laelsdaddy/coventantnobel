@@ -1,0 +1,262 @@
+/*
+#1c3a93
+#3364cb
+#4379e2
+*/
+@keyframes slideRight1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1; } }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  border: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 3rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: #777; }
+
+.heading-primary--main {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+  animation: slideRight1 2s ease-out; }
+
+.heading-primary--sub {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 4rem;
+  font-weight: 300;
+  animation: fadeIn 4s ease-out; }
+
+.header__text-box--second {
+  background-color: #05386b;
+  height: 15rem;
+  width: 30rem;
+  position: absolute;
+  left: 75%;
+  top: 65%;
+  border-radius: 1rem; }
+
+.header__text-box--form {
+  padding: 1rem; }
+
+input[type=text] {
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-radius: 0.3rem; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 2rem 7rem;
+  /*    transition: all 0.2s;*/ }
+
+.btn:active {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--purple {
+  background-color: #8860d0;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem; }
+
+.btn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--animated {
+  transform: scale(1.2); }
+
+.btn-opaque {
+  height: 4rem;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 0.3rem; }
+
+.section-gallery {
+  background-color: #eee;
+  margin-top: -20rem;
+  padding-top: 30rem; }
+  .section-gallery-container {
+    width: 100%;
+    position: relative; }
+
+.gallery__photos--content {
+  list-style: none;
+  height: 10rem;
+  width: 25rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (6rem * 2)) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - (6rem * 3)) / 4); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - (6rem * 2)) / 3)  + 6rem); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - (6rem * 3)) / 4)  + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - (6rem * 3)) / 4)  + (2 *6rem)); }
+
+.header {
+  height: 80vh;
+  background: linear-gradient(to top right, rgba(44, 66, 131, 0.8), rgba(107, 146, 227, 0.8)), url(../img/ops.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(100% 0, 100% 100%, 70% 100%, 0 95%, 0 0);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem; }
+  .header__text-box--first {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    backface-visibility: hidden; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading-secondary {
+    font-size: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgba(142, 68, 173, 0.9), rgba(52, 152, 219, 0.9));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.heading-secondary::after {
+    content: " ";
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    margin: 2rem auto;
+    background-image: linear-gradient(to bottom right, rgba(142, 68, 173, 0.9), rgba(52, 152, 219, 0.9));
+    color: transparent;
+    background-clip: text;
+    transition: 1s ease;
+}
+
+.heading-secondary:hover::after {
+    width: 25rem;
+}
+
+
+
+
+
+/*
+
+- Engagement / Supervision of the Sales team members in two Regions (Awka & Onitsha)
+- Ensuring continuous growth in Consumer loans using the Banks product papers
+- Organizing presentations to Large Corporates, Government Ministries, Departments and Agencies for Consumer Loans and Payroll integration
+- Recommends/Suggest locations for the establishment of Micro branches within the regions
+- Monitoring/assessing the performance of various Consumer loans in the Region.
+
+- Mobilized over 250M within 24hours to return branch to profitability in the nick of time.
+- Growing retail deposits from an average of 10BN to over N19BN within 6 months in Awka/Onitsha regional banks
+- Growing retail/SME loans to N1.2BN from an average of 300M within 12 months.
+
+Dear EEDC,
+
+Please find attached a copy of my resume for the position of Network Manager at your institution.
+ 
+As a consistent performer evidenced by several awards and my rich portfolio in banking with a proven record of growing revenues through effecive management of resources, my goal is to leverage 15 years of experience to help EEDC succeed with optimizing resources and growing respectable revenue numbers.
+ 
+I am looking forward to having a meeting to share my insights and ideas on making EEDC network management more effective.
+ 
+Sincerely,
+
+Ahakaku Chidike Onyenwe
+
+
+
+
+
+*/

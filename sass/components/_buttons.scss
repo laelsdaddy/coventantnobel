@@ -18,6 +18,20 @@
         margin-bottom: 3rem;
         
     }
+
+    &-contact {
+        background: linear-gradient(to bottom right, $color-secondary-2 1%, $color-secondary-1);
+        //background-color: $color-secondary-2;
+        border: none;
+        color: $color-white;
+        width: 70%;
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+        padding: 1.5rem 0;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: 'Raleway';
+    }
     
     &--purple {
         // background-color: $color-secondary-2;
@@ -36,10 +50,23 @@
         border-radius: 0.5rem;
         
     }
+
+    &--plans {
+        text-transform: uppercase;
+        border-radius: 3px;
+        color: $color-white;
+        background-color: $color-primary;
+        display: block;
+        margin: 1rem auto;
+        margin-top: 2rem;
+        width: 80%;
+        
+        
+    }
     
     &:hover {
-        transform: translateY(-0.5rem) scale(1.1);
-        box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
+        transform: translateY(-0.1rem);
+        box-shadow: 0 1rem 1rem rgba(0,0,0, 0.2);
         
     }
     
@@ -50,20 +77,28 @@
     
     
     
-    &--opaque {
+    &--card {
         height: 4rem;
         width: 100%;
-        color: $color-white;
         font-weight: 300;
         font-size: 2rem;
-        border: 2px solid $color-white;
         text-transform: uppercase;
-        background-color: transparent;
-        border-radius: 0.3rem;
+        border-radius: 3px;
+        background-color: #e67e22;
+        color: $color-white;
+
+        &:hover{
+            transform: translateY(0);
+            background-color: #f39c12;
+
+        }
 
     }
 
 }
+
+
+
 
 
 

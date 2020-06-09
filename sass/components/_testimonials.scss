@@ -1,0 +1,58 @@
+.section-feedback {
+    width: 100%;
+    background-color: #eee;
+    padding: 3rem;
+}
+
+.feedback {
+    &__container {
+        background-color: rgba($color-black, 0.7);
+        width: 70%;
+        height: 50rem;
+        margin: 0 auto;
+        padding-top: 10rem;
+        
+    }
+
+    &__block {
+        background-color: $color-white;
+        width: 70%;
+        height: 25rem;
+        padding: 2rem;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+
+        &--imagecasing {
+            height: 90%;
+            width: 100%;
+            
+          
+        }
+
+        &--image {
+            height: 90%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &--message {
+           width: 75%;
+           padding: 1rem;
+           
+          
+            &-header {
+                color: $color-primary;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+            &-body {
+                color: $color-grey-dark;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
