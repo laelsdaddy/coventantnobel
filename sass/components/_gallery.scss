@@ -2,15 +2,14 @@
     margin-top: -3.5rem;
     background-color:rgb(250, 250, 250);
     padding: 10rem 0 2rem 0;
-    transition: all 5s;
+    transition: all .5s;
 
 
     &-container {
           max-width: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
           grid-template-rows: minmax(15rem, auto);
-          grid-auto-flow: dense;
           grid-gap: 0.1rem;
           
 
@@ -18,42 +17,75 @@
 
     &-box {
         max-width: 100%;
+        height: 30rem;
+
+        
 
         &:nth-child(1){
-            background: linear-gradient(to top right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5)), url(../../img/test.jpg) center/contain;
-            background-size: cover;
+            background: linear-gradient(to top right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5)), url(../../img/test.jpg) center/cover;
             background-repeat: no-repeat;
-            height: 25rem;
+            transition: all 2s;
+
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-primary-light, 0), rgba($color-primary-dark, 0)), url(../../img/test.jpg) center/cover;
+                
+            }
         }
+
 
         &:nth-child(2){
-            grid-column: span 2;
-            grid-row: span 2;
+            // grid-column: span 2;
+            // grid-row: span 2;
+            background: linear-gradient(to top right, rgba($color-secondary-1, 0.5), rgba($color-secondary-2, 0.5)), url(../../img/doc.jpg) center/cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-secondary-1, 0), rgba($color-secondary-2, 0)), url(../../img/doc.jpg) center/cover;
+            }
+            
         }
+
 
         &:nth-child(3){
-            background: linear-gradient(to top right, rgba($color-secondary-1, 0.5), rgba($color-secondary-2, 0.5)), url(../../img/doc.jpg) center/contain;
-            background-size: cover;
+            background: linear-gradient(to top right, rgba($color-secondary-1, 0.5), rgba($color-secondary-2, 0.5)), url(../../img/doc.jpg) center/cover;
             background-repeat: no-repeat;
-            height: 25rem;
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-secondary-1, 0), rgba($color-secondary-2, 0)), url(../../img/doc.jpg) center/cover;
+                
+            }
         }
 
+
         &:nth-child(4){
-            background: linear-gradient(to top right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5)), url(../../img/ops.jpg) center/contain;
-            background-size: cover;
+            background: linear-gradient(to top right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5)), url(../../img/ops.jpg) center/cover;
             background-repeat: no-repeat;
-            height: 25rem;
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-primary-light, 0), rgba($color-primary-dark, 0)), url(../../img/ops.jpg) center/cover;
+            }
         }
 
         &:nth-child(5){
             background: linear-gradient(to top right, rgba($color-secondary-1, 0.5), rgba($color-secondary-2, 0.5)), url(../../img/bg1.jpg) center/cover;
             background-repeat: no-repeat;
-            height: 25rem;
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-secondary-1, 0), rgba($color-secondary-2, 0)), url(../../img/bg1.jpg) center/cover;
+            
+            }
+        }
+
+        &:nth-child(6){
+            background: linear-gradient(to top right, rgba($color-secondary-1, 0.5), rgba($color-secondary-2, 0.5)), url(../../img/bg1.jpg) center/cover;
+            background-repeat: no-repeat;
+            &:hover {
+                background: linear-gradient(to top right, rgba($color-secondary-1, 0), rgba($color-secondary-2, 0)), url(../../img/bg1.jpg) center/cover;
+        
+            }
+
         }
 
         &-pic {
             width: 100%;
-            height: 28rem;
+            height: 30rem;
 
         }
     }
